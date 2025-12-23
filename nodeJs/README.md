@@ -61,3 +61,11 @@ Response :- res.status(httpStatus.OK).json({
     status_code: 200,
     message: "bot deleted successfully",
   });```
+
+
+
+  ## .env file
+
+  ```
+MONGO_URI=mongodb+srv://RJGYM:RVRs3D5NTFSNPMfv@gms0.zltene9.mongodb.net/RJGYM?appName=GMS0
+  ```
