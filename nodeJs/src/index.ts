@@ -2,6 +2,7 @@ import express, { type Request, type Response } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import database from './config/database.js';
+import router from './routes/index.routes.js';
 dotenv.config();
 
 const app = express();
@@ -17,7 +18,7 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 
-
+app.use("/v1", router)
 
 
 // Start Server
