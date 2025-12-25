@@ -31,7 +31,13 @@ const changePassword = async (userId: string, oldPassword: string, newPassword: 
     }
 }
 
+const generateOtp = (): number => {
+  return Math.floor(100000 + Math.random() * 900000); // 6 digit
+};
+
+
 export default {
     getUserProfile,
-    changePassword
+    changePassword,
+    generateOtp
 };
