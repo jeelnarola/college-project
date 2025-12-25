@@ -67,5 +67,9 @@ Response :- res.status(httpStatus.OK).json({
   ## .env file
 
   ```
+PORT=4000
 MONGO_URI=mongodb+srv://RJGYM:RVRs3D5NTFSNPMfv@gms0.zltene9.mongodb.net/RJGYM?appName=GMS0
+
+
+JWT_SECRET=JWT_SECRET_MY_PROJECT
   ```
